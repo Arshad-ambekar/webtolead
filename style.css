@@ -33,3 +33,9 @@ form {
   border: 2px solid black;
   padding: 15px;
 }
+
+g-recaptcha {
+  justify-content: center;
+  margin-top: 15px;
+  display: flex;
+}
