@@ -1,1 +1,35 @@
-/* jkdjfdkf */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+label,
+input {
+  display: block;
+}
+label {
+  color: rgb(6, 147, 254);
+}
+input {
+  width: 100%;
+}
+
+.sumbit {
+  background-color: brown;
+  margin: 15px auto 0 auto;
+  width: 40%;
+  border-radius: 5px;
+}
+
+form {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+  border: 2px solid black;
+  padding: 15px;
+}
