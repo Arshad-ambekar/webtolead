@@ -6,6 +6,8 @@
     <title>Web to Lead Form</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <!-- for adding captcha from google -->
   </head>
   <body>
     <h1>Cread Lead</h1>
@@ -15,6 +17,11 @@
       onsubmit="handleSubmit(event)"
     >
       <input type="hidden" name="oid" value="00D5j00000DjP3h" />
+      <input
+        type="hidden"
+        name="captcha_settings"
+        value='{"keyname":"WebtoLeadFormCaptcha","fallback":"true","orgId":"00D5j00000DjP3h","ts":""}'
+      />
       <input
         type="hidden"
         name="retURL"
@@ -90,6 +97,12 @@
         type="text"
         required="true"
       /><br />
+
+      <div
+        class="g-recaptcha"
+        data-sitekey="6LeCxVUqAAAAAG4owxQR5ubUwcog_5JE5Honplfz"
+      ></div>
+      <br />
 
       <input type="submit" name="submit" class="sumbit" />
     </form>
